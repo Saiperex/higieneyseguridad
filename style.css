@@ -58,11 +58,16 @@ body
     width: 100%;
     margin-top:10vh;
 }
+.noticias
+{
+    padding: 20px 0;
+    background-color: aquamarine;
+}
 .swiper 
 {
     width: 60%;
     min-width: 320px;
-    height: 400px;
+    height: 500px;
 }
 .swiper-slide
 {
@@ -75,6 +80,8 @@ body
     justify-content: center;
     font-family: "Poppins", serif;
     color: #fff;
+    box-shadow: 20px 10px 20px #000;
+    border-radius: 12px;
 }
 .swiper-slide p
 {
