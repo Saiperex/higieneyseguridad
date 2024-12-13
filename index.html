@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIF - Higiene y Seguridad</title>
 </head>
+
 <body>
     <header class="cabecera">
         <div class="cabecera_mid">
@@ -24,5 +30,64 @@
             </nav>
         </div>
     </header>
+    <main class="principal">
+        <section class="section noticias">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" style="background-image: url('bg1.png');">
+                        <h2>Noticia 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni mollitia vel ducimus quis doloribus, voluptatum rem commodi provident magnam sapiente quas quam beatae enim consectetur sit illo ab quos.</p>
+                        <a href="">Ver Más</a>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('bg2.jpeg');">
+                        <h2>Noticia 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni mollitia vel ducimus quis doloribus, voluptatum rem commodi provident magnam sapiente quas quam beatae enim consectetur sit illo ab quos.</p>
+                        <a href="">Ver Más</a>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('bg3.jpeg');">
+                        <h2>Noticia 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni mollitia vel ducimus quis doloribus, voluptatum rem commodi provident magnam sapiente quas quam beatae enim consectetur sit illo ab quos.</p>
+                        <a href="">Ver Más</a>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+    </main>
 </body>
+<script>
+    var swiper = new Swiper(".swiper",
+        {
+            grabCursor: true,
+            effect: "creative",
+            loop: true,
+            autoplay: 
+            {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            creativeEffect:
+            {
+                prev:
+                {
+                    shadow: true,
+                    translate: [0, 0, -400],
+                },
+                next:
+                {
+                    translate: ["100%", 0, 0],
+                },
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+</script>
+
 </html>
