@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIF - Higiene y Seguridad</title>
+    <title>LFI - Higiene y Seguridad</title>
 </head>
 
 <body>
@@ -21,16 +21,37 @@
             <a href="#" class="logo"><img src="lif.png" alt="logo"></a>
             <nav>
                 <ul>
+                    <li><a href="">Inicio</a></li>
                     <li><a href="">Servicios</a></li>
                     <li><a href="">Quienes Somos</a></li>
-                    <li><a href="">Contacto</a></li>
                     <li><a href="">FaQ</a></li>
                     <li><a href="">Politicas</a></li>
+                    <li class="contacto_menu_button"><a href="">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="principal">
+        <section class="section inicio">
+            <div class="section_area">
+                <div class="inicio_text">
+                    <legend>LFI HIGIENE Y SEGURIDAD</legend>
+                    <h2>Los Mejores especialistas en <span>Higiene</span>, <span>Seguridad</span> y <span>Medio
+                            Ambiente</span></h2>
+                    <p>Somos una empresa dedicada a dar servicios de Higiene y Seguridad en el trabajo en todos los
+                        rubros. Nuestro principal objetivo es brindar el mejor asesoramiento mediante nuestros
+                        profesionales interdisciplinarios calificados dando soluciones acordes a la necesidad de cada
+                        empresa.</p>
+                    <div>
+                        <a href="">Contactanos</a>
+                        <a href="">Whatsapp</a>
+                    </div>
+                </div>
+                <div class="bg_img">
+                </div>
+            </div>
+        </section>
+        <div class="clip"></div>
         <section class="section noticias">
             <!-- Slider main container -->
             <div class="swiper">
@@ -39,17 +60,23 @@
                     <!-- Slides -->
                     <div class="swiper-slide" style="background-image: url('bg1.png');">
                         <h2>Noticia 1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni mollitia vel ducimus quis doloribus, voluptatum rem commodi provident magnam sapiente quas quam beatae enim consectetur sit illo ab quos.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni mollitia vel ducimus quis
+                            doloribus, voluptatum rem commodi provident magnam sapiente quas quam beatae enim
+                            consectetur sit illo ab quos.</p>
                         <a href="">Ver Más</a>
                     </div>
                     <div class="swiper-slide" style="background-image: url('bg2.jpeg');">
                         <h2>Noticia 2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni mollitia vel ducimus quis doloribus, voluptatum rem commodi provident magnam sapiente quas quam beatae enim consectetur sit illo ab quos.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni mollitia vel ducimus quis
+                            doloribus, voluptatum rem commodi provident magnam sapiente quas quam beatae enim
+                            consectetur sit illo ab quos.</p>
                         <a href="">Ver Más</a>
                     </div>
                     <div class="swiper-slide" style="background-image: url('bg3.jpeg');">
                         <h2>Noticia 3</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni mollitia vel ducimus quis doloribus, voluptatum rem commodi provident magnam sapiente quas quam beatae enim consectetur sit illo ab quos.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magni mollitia vel ducimus quis
+                            doloribus, voluptatum rem commodi provident magnam sapiente quas quam beatae enim
+                            consectetur sit illo ab quos.</p>
                         <a href="">Ver Más</a>
                     </div>
                 </div>
@@ -66,7 +93,7 @@
             grabCursor: true,
             effect: "creative",
             loop: true,
-            autoplay: 
+            autoplay:
             {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -88,6 +115,23 @@
                 el: '.swiper-pagination',
             },
         });
+</script>
+<script>
+    // Lista de imágenes de fondo
+    const bg = ['lfi.webp', 'lfi2.webp'];
+    let indice = 0; // Empieza con la primera imagen
+
+    function cambiarFondo() {
+        // Cambiar la imagen de fondo de la clase .bg_img
+        document.querySelector('.bg_img').style.backgroundImage = `url('${bg[indice]}')`;
+        indice = (indice + 1) % bg.length; // Ciclo de imágenes
+    }
+
+    // Inicializar el primer fondo
+    cambiarFondo();
+
+    // Cambiar el fondo cada 30 segundos (30000 milisegundos)
+    setInterval(cambiarFondo, 6000);
 </script>
 
 </html>
