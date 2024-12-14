@@ -399,4 +399,230 @@ body
 .faq_button button:hover {
     background-color: #3a8068;
 }
+/*CONTACTO*/
+.contacto {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
 
+.contacto .section_area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.contacto_text {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacto_text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacto_text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacto_formulario {
+    flex: 1 1 60%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacto_formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form_group input, .form_group textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #555;
+    width: 100%;
+}
+
+.form_group input:focus, .form_group textarea:focus {
+    outline: none;
+    border-color: #07bf9d;
+}
+
+.btn_enviar {
+    background-color: #07bf9d;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_enviar:hover {
+    background-color: #3a8068;
+}
+
+.contacto_redes {
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+.contacto_redes h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.redes_icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.red_social img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.red_social:hover img {
+    transform: scale(1.2);
+}
+.redes_icons i
+{
+    font-size: 40px;
+}
+.fa-square-facebook
+{
+    color: #4267B2;
+}
+.fa-square-instagram
+{
+    color: #E1306C;
+}
+.fa-linkedin
+{
+    color: #007ab9;
+}
+.fa-square-whatsapp
+{
+    color: #25D366;
+}
+/*FOOTER*/
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    width: 80%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.footer_logo {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.footer_logo img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer_logo p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #07bf9d;
+}
+
+.footer_links, .footer_contacto {
+    flex: 1 1 30%;
+}
+
+.footer_links h3, .footer_contacto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #07bf9d;
+}
+
+.footer_links ul, .footer_contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_links li, .footer_contacto li {
+    margin-bottom: 10px;
+}
+
+.footer_links a, .footer_contacto a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer_links a:hover, .footer_contacto a:hover {
+    color: #07bf9d;
+}
+
+.footer_contacto ul {
+    margin-bottom: 15px;
+}
+
+.footer_redes {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.footer_redes a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer_redes a:hover img {
+    transform: scale(1.2);
+}
+
+.footer_bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+}

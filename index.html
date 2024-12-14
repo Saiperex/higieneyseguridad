@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <script src="https://kit.fontawesome.com/c8bf7962f3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -214,7 +215,98 @@
                 </div>
             </div>
         </section>
+        <section class="section contacto">
+            <div class="section_area">
+                <div class="contacto_text">
+                    <h2>Contáctanos</h2>
+                    <p>¿Tienes preguntas o necesitas nuestros servicios? Estamos aquí para ayudarte. Completa el formulario o conéctate con nosotros a través de nuestras redes sociales.</p>
+                </div>
+                <div class="contacto_formulario">
+                    <form action="#" method="POST">
+                        <div class="form_group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="email">Correo Electrónico o Whatsapp</label>
+                            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn_enviar">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="contacto_redes">
+                    <h3>Síguenos en:</h3>
+                    <div class="redes_icons">
+                        <a href="#" target="_blank" class="red_social facebook" aria-label="Facebook">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" class="red_social instagram" aria-label="Instagram">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" class="red_social linkedin" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" class="red_social whatsapp" aria-label="WhatsApp">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer_area">
+            <!-- Logo y Eslogan -->
+            <div class="footer_logo">
+                <img src="lif.png" alt="LFI Logo">
+                <p>“Cuidando la seguridad, promoviendo el bienestar”</p>
+            </div>
+    
+            <!-- Enlaces importantes -->
+            <div class="footer_links">
+                <h3>Enlaces Importantes</h3>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#politica">Política de Privacidad</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+    
+            <!-- Formas de contacto -->
+            <div class="footer_contacto">
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><strong>Teléfono:</strong> <a href="tel:+123456789">+123 456 789</a></li>
+                    <li><strong>Correo:</strong> <a href="mailto:info@lifseguridad.com">info@lifseguridad.com</a></li>
+                    <li><strong>Dirección:</strong> Calle Ejemplo 123, Ciudad, País</li>
+                </ul>
+                <div class="footer_redes">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; 2024 LFI Higiene y Seguridad Empresarial. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 <script>
     var swiper = new Swiper(".swiper",
