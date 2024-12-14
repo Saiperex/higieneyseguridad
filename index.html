@@ -191,6 +191,29 @@
 
             </div>
         </section>
+        <div class="clip"></div>
+        <section class="section faq">
+            <div class="section_area">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq_items">
+                    <div class="faq_item">
+                        <h3>¿Qué servicios ofrece LFI?</h3>
+                        <p>Ofrecemos auditorías de seguridad, capacitaciones, elaboración de planes de emergencia, análisis medioambientales, entre otros servicios adaptados a cada rubro empresarial.</p>
+                    </div>
+                    <div class="faq_item">
+                        <h3>¿Trabajan con todas las industrias?</h3>
+                        <p>Sí, en LFI ofrecemos servicios personalizados para empresas de todos los sectores, asegurándonos de cumplir con las normativas específicas de cada industria.</p>
+                    </div>
+                    <div class="faq_item">
+                        <h3>¿Cómo puedo contactarlos?</h3>
+                        <p>Puedes contactarnos a través del formulario de contacto en nuestro sitio web o vía WhatsApp. Estamos disponibles para resolver todas tus consultas.</p>
+                    </div>
+                </div>
+                <div class="faq_button">
+                    <button onclick="verMasFaq()">Ver más preguntas</button>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 <script>
@@ -238,6 +261,29 @@
 
     // Cambiar el fondo cada 30 segundos (30000 milisegundos)
     setInterval(cambiarFondo, 6000);
+</script>
+<script>
+    function verMasFaq() {
+        const faqContainer = document.querySelector('.faq_items');
+
+        // Nuevas preguntas
+        const nuevasPreguntas = `
+            <div class="faq_item">
+                <h3>¿Por qué es importante la seguridad e higiene en el trabajo?</h3>
+                <p>La seguridad e higiene laboral son fundamentales para prevenir accidentes, cuidar la salud de los trabajadores y garantizar el cumplimiento de las normativas vigentes.</p>
+            </div>
+            <div class="faq_item">
+                <h3>¿LFI brinda capacitaciones personalizadas?</h3>
+                <p>Sí, adaptamos nuestras capacitaciones a las necesidades de cada empresa, asegurándonos de abordar los riesgos específicos del entorno laboral.</p>
+            </div>
+        `;
+
+        // Agregar preguntas al contenedor
+        faqContainer.innerHTML += nuevasPreguntas;
+
+        // Ocultar el botón después de mostrar las preguntas
+        document.querySelector('.faq_button').style.display = 'none';
+    }
 </script>
 
 </html>
