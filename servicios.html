@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script src="https://kit.fontawesome.com/c8bf7962f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Higiene y Seguridad - LFI</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html 
+        {
+            scroll-behavior: smooth; /* Hacer que el desplazamiento sea suave */
+        }
+        /* Agregar un desplazamiento adicional solo al hacer scroll */
+        :target 
+        {
+            scroll-margin-top: 10vh; /* Añadir un margen cuando se haga scroll hacia este ancla */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 10vh auto;
+            padding: 20px;
+        }
+
+        section {
+            margin: 10vh 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+        }
+
+        h2 {
+            color: #000;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-list li {
+            margin: 10px 0;
+            padding: 8px;
+            border-left: 5px solid #07bf9d;
+            background-color: #f9f9f9;
+        }
+
+        .service-list li i {
+            color: #07bf9d;
+            margin-right: 10px;
+        }
+        .contact-button
+        {
+            padding: 10px;
+            background-color: #07bf9d;
+            color: #f4f4f4;
+            display: inline-block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="cabecera_mid">
+            <a href="#" class="logo"><img src="lif.png" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Quienes Somos</a></li>
+                    <li><a href="">FaQ</a></li>
+                    <li><a href="">Politicas</a></li>
+                    <li class="contacto_menu_button"><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Planes de evacuación -->
+        <section id="planes-evacuacion">
+            <h2>Planes de Evacuación</h2>
+            <p>Elaboramos el Informe Técnico de Higiene y Seguridad para tu empresa, requisito indispensable para el
+                certificado final de bomberos y habilitación de tu comercio, el cual incluye:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Plan y plano de evacuación detallado.</li>
+                <li><i class="fa fa-check-circle"></i> Análisis de carga de fuego, vías de escape, señalización y luces
+                    de emergencia.</li>
+                <li><i class="fa fa-check-circle"></i> Capacitación a todo el personal en materia de protección contra
+                    incendios.</li>
+                <li><i class="fa fa-check-circle"></i> Carpeta lista para presentar en municipalidad y bomberos.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para
+                más detalles</a>
+        </section>
+
+        <!-- Certificado final de bomberos -->
+        <section id="certificado-bomberos">
+            <h2>Certificado Final de Bomberos</h2>
+            <p>Obtén el Certificado Final de Bomberos para tu Negocio. Nos encargamos de todo el proceso para que
+                obtengas el certificado sin complicaciones, incluyendo los siguientes documentos:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Plan de evacuación.</li>
+                <li><i class="fa fa-check-circle"></i> Certificación de instalaciones eléctricas.</li>
+                <li><i class="fa fa-check-circle"></i> Certificación de instalaciones de gas (si corresponde).</li>
+                <li><i class="fa fa-check-circle"></i> Planos de arquitectura.</li>
+                <li><i class="fa fa-check-circle"></i> Documentación administrativa.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para
+                más detalles</a>
+        </section>
+
+        <!-- Habilitación de negocios -->
+        <section id="habilitacion-negocio">
+            <h2>Habilitación de Negocios</h2>
+            <p>Nos encargamos de la elaboración y seguimiento de los requisitos establecidos por la Municipalidad para
+                asegurar que tu establecimiento cumpla con todas las normativas vigentes. Nuestro servicio incluye:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Revisión de los requisitos establecidos por la Municipalidad para
+                    la habilitación de tu negocio.</li>
+                <li><i class="fa fa-check-circle"></i> Elaboración y presentación de la documentación necesaria para
+                    iniciar el proceso de habilitación.</li>
+                <li><i class="fa fa-check-circle"></i> Asesoría en la selección del local y el cumplimiento de las
+                    normativas de seguridad y accesibilidad.</li>
+                <li><i class="fa fa-check-circle"></i> Gestión de permisos de funcionamiento, de acuerdo con la
+                    normativa local vigente.</li>
+                <li><i class="fa fa-check-circle"></i> Seguimiento del proceso de habilitación hasta la obtención de la
+                    autorización final por parte de la Municipalidad.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para
+                más detalles</a>
+        </section>
+
+        <!-- Ruidos molestos -->
+        <section>
+            <h2>Ruidos Molestos al Vecindario</h2>
+            <p>Medimos los niveles de ruido para evitar quejas, clausuras y multas, y ofrecemos soluciones integrales
+                para reducir el ruido generado por tu actividad. Nuestro servicio incluye:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Medición certificada de los niveles de ruido en el ambiente
+                    laboral y sus alrededores.</li>
+                <li><i class="fa fa-check-circle"></i> Diagnóstico del impacto acústico generado por la actividad de tu
+                    empresa en la zona.</li>
+                <li><i class="fa fa-check-circle"></i> Asesoría para la implementación de medidas correctivas y
+                    preventivas para reducir el ruido.</li>
+                <li><i class="fa fa-check-circle"></i> Diseño de un plan de acción para cumplir con las normativas
+                    locales y evitar sanciones.</li>
+                <li><i class="fa fa-check-circle"></i> Informe detallado con recomendaciones sobre cómo reducir la
+                    contaminación acústica.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para
+                más detalles</a>
+        </section>
+
+        <!-- Servicios de higiene y seguridad a empresas -->
+        <section id="higiene-y-seguridad">
+            <h2>Servicio de Higiene y Seguridad a Empresas</h2>
+            <p>Diseñamos un servicio a medida para gestionar los requerimientos de la ART y los entes de control,
+                capacitando a tu equipo para desarrollar una cultura sólida de seguridad en el trabajo. Nuestro servicio
+                incluye:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Análisis de los riesgos y condiciones de seguridad en tu empresa
+                    para elaborar un plan de acción.</li>
+                <li><i class="fa fa-check-circle"></i> Diseño de políticas y procedimientos para la gestión de higiene y
+                    seguridad laboral.</li>
+                <li><i class="fa fa-check-circle"></i> Capacitación continua para los empleados sobre seguridad laboral
+                    y manejo de riesgos.</li>
+                <li><i class="fa fa-check-circle"></i> Implementación de medidas correctivas y preventivas según las
+                    normativas de la ART.</li>
+                <li><i class="fa fa-check-circle"></i> Acompañamiento en auditorías y revisión de procesos para cumplir
+                    con la normativa de higiene y seguridad laboral.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para
+                más detalles</a>
+        </section>
+
+        <!--ERGONOMIA-->
+        <section id="ergonomia">
+            <h2><i class="fas fa-user-friends service-icon"></i> Programa de Ergonomía Integrado</h2>
+            <p>Desarrollamos un programa integral de ergonomía adaptado a todos los puestos de trabajo de tu empresa, asegurando la salud y el bienestar de tus empleados. Nuestro servicio incluye:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Evaluación de los puestos de trabajo y condiciones ergonómicas actuales.</li>
+                <li><i class="fa fa-check-circle"></i> Diseño de soluciones ergonómicas personalizadas para cada puesto.</li>
+                <li><i class="fa fa-check-circle"></i> Implementación de medidas correctivas y preventivas para mejorar el bienestar físico de los empleados.</li>
+                <li><i class="fa fa-check-circle"></i> Capacitación en ergonomía para todo el personal de la empresa.</li>
+                <li><i class="fa fa-check-circle"></i> Monitoreo continuo de las condiciones laborales y seguimiento a la implementación de mejoras.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para más detalles</a>
+        </section>
+        
+        <!-- Mediciones de ruido y iluminación -->
+        
+        <section id="medicion-ruido">
+            <h2>Medición de Ruido y Iluminación en el Trabajo</h2>
+            <p>Realizamos mediciones certificadas de ruido ambiental y de iluminación en el ambiente laboral, asegurando que tu empresa cumpla con las normativas vigentes para garantizar el bienestar de tus trabajadores. Nuestro servicio incluye:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Medición de los niveles de ruido ambiental en el área de trabajo.</li>
+                <li><i class="fa fa-check-circle"></i> Evaluación de la iluminación en los espacios laborales según los estándares requeridos.</li>
+                <li><i class="fa fa-check-circle"></i> Análisis de los resultados y emisión de informes detallados sobre las condiciones de ruido y luz.</li>
+                <li><i class="fa fa-check-circle"></i> Propuestas de soluciones y medidas correctivas para reducir el ruido excesivo o mejorar la iluminación.</li>
+                <li><i class="fa fa-check-circle"></i> Aseguramiento del cumplimiento de las normativas de seguridad y salud laboral en cuanto a ruido e iluminación.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para más detalles</a>
+        </section>
+        
+
+        <!-- Sistema de gestión ISO 45.001 -->
+        <section id="sistema-gestion">
+            <h2>Sistema de Gestión de Salud & Seguridad en el Trabajo ISO 45.001</h2>
+            <p>Te acompañamos en el proceso de obtener la certificación ISO 45001 para tu empresa, diseñando e
+                implementando un plan estratégico integral para la gestión de la salud y seguridad en el trabajo.
+                Nuestro servicio incluye:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Evaluación inicial de riesgos y condiciones de trabajo actuales.
+                </li>
+                <li><i class="fa fa-check-circle"></i> Diseño de políticas y procedimientos alineados con los estándares
+                    internacionales de salud y seguridad laboral.</li>
+                <li><i class="fa fa-check-circle"></i> Capacitación a todo el personal sobre prácticas de seguridad y
+                    manejo de riesgos en el entorno laboral.</li>
+                <li><i class="fa fa-check-circle"></i> Implementación de medidas correctivas y preventivas para
+                    garantizar un ambiente de trabajo seguro.</li>
+                <li><i class="fa fa-check-circle"></i> Acompañamiento en el proceso de auditoría y certificación para
+                    asegurar el cumplimiento de los requisitos de la ISO 45001.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para
+                más detalles</a>
+        </section>
+
+
+        <!-- Seguridad Vial -->
+        <section>
+            <h2>Seguridad Vial</h2>
+            <p>En LFI, diseñamos planes de seguridad vial personalizados para la gestión y operación de flotas de
+                vehículos, garantizando la seguridad en las rutas y el cumplimiento de todas las normativas exigidas por
+                tus clientes. Nuestro enfoque integral incluye:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Análisis de riesgos viales específicos para tu flota y rutas de
+                    trabajo.</li>
+                <li><i class="fa fa-check-circle"></i> Capacitación en seguridad vial para conductores, con énfasis en
+                    prevención y buenas prácticas.</li>
+                <li><i class="fa fa-check-circle"></i> Implementación de medidas preventivas como señales de tránsito,
+                    límites de velocidad, y monitoreo de condiciones de los vehículos.</li>
+                <li><i class="fa fa-check-circle"></i> Evaluación continua de desempeño vial y cumplimiento de
+                    normativas de transporte.</li>
+                <li><i class="fa fa-check-circle"></i> Asesoría sobre las mejores prácticas y soluciones tecnológicas
+                    para mejorar la seguridad en la flota.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para
+                más información</a>
+        </section>
+
+
+        <!-- Medioambiente -->
+        <section id="medioambiente">
+            <h2>Habilitación Ambiental</h2>
+            <p>En LFI, nos especializamos en el análisis y habilitación ambiental para proyectos de construcción,
+                industriales y comerciales. Gestionamos todo el proceso para garantizar el cumplimiento de las
+                normativas ambientales y obtener el certificado necesario para el desarrollo de tu empresa, asegurando
+                que todos los procedimientos sean adecuados y sostenibles. Nuestros servicios incluyen:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Estudio de impacto ambiental para evaluar el efecto de tu
+                    proyecto en el entorno.</li>
+                <li><i class="fa fa-check-circle"></i> Gestión y tramitación de permisos y certificaciones ambientales
+                    ante las autoridades competentes.</li>
+                <li><i class="fa fa-check-circle"></i> Asesoramiento sobre las mejores prácticas para cumplir con las
+                    regulaciones locales y nacionales.</li>
+                <li><i class="fa fa-check-circle"></i> Elaboración de informes técnicos y documentación necesaria para
+                    obtener la habilitación ambiental.</li>
+                <li><i class="fa fa-check-circle"></i> Acompañamiento durante todo el proceso de obtención de permisos y
+                    habilitación del proyecto.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para
+                más información</a>
+        </section>
+
+
+        <!-- Certificación de instalaciones eléctricas y de gas -->
+        <section>
+            <h2>Certificación de Instalaciones Eléctricas y de Gas</h2>
+            <p>En LFI contamos con un equipo de profesionales altamente especializados en la certificación de
+                instalaciones eléctricas y de gas. Nos encargamos de gestionar todos los trámites necesarios para
+                cumplir con las normativas de seguridad y obtener las certificaciones requeridas para tus proyectos, ya
+                sea en obras de construcción, reformas o instalaciones nuevas. Te ofrecemos:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Certificación de instalaciones eléctricas y de gas conforme a las
+                    normativas vigentes.</li>
+                <li><i class="fa fa-check-circle"></i> Inspección y verificación de la seguridad en las instalaciones
+                    antes de la entrega.</li>
+                <li><i class="fa fa-check-circle"></i> Gestión completa de la documentación necesaria para la obtención
+                    de certificados.</li>
+                <li><i class="fa fa-check-circle"></i> Asesoramiento técnico para cumplir con las regulaciones locales y
+                    nacionales.</li>
+                <li><i class="fa fa-check-circle"></i> Certificación de calidad y seguridad en las instalaciones para
+                    proyectos residenciales y comerciales.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para
+                más información</a>
+        </section>
+
+
+        <!-- Programas de seguridad para obras en construcción -->
+        <section id="construcción">
+            <h2>Programas de Seguridad para Obras en Construcción</h2>
+            <p>En LFI, desarrollamos programas de seguridad específicos para obras de construcción, adaptados a las
+                características y necesidades particulares de cada proyecto. Nos aseguramos de que todas las normativas
+                de seguridad se cumplan desde el inicio hasta la entrega final de la obra. Nuestro objetivo es minimizar
+                los riesgos laborales, prevenir accidentes y garantizar un ambiente de trabajo seguro para todos los
+                involucrados. Ofrecemos lo siguiente:</p>
+            <ul class="service-list">
+                <li><i class="fa fa-check-circle"></i> Desarrollo de planes de seguridad personalizados según las
+                    características de la obra.</li>
+                <li><i class="fa fa-check-circle"></i> Implementación de medidas de control y prevención de riesgos en
+                    cada fase del proyecto.</li>
+                <li><i class="fa fa-check-circle"></i> Supervisión constante para asegurar el cumplimiento de las
+                    normativas de seguridad.</li>
+                <li><i class="fa fa-check-circle"></i> Capacitación continua para el personal en prácticas seguras y
+                    manejo de equipos de protección.</li>
+                <li><i class="fa fa-check-circle"></i> Planes de emergencia y evacuación específicos para obras de
+                    construcción.</li>
+            </ul>
+            <a href="https://wa.me/123456789" class="contact-button"><i class="fab fa-whatsapp"></i> Contáctanos para
+                más información</a>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer_area">
+            <!-- Logo y Eslogan -->
+            <div class="footer_logo">
+                <img src="lif.png" alt="LFI Logo">
+                <p>“Cuidando la seguridad, promoviendo el bienestar”</p>
+            </div>
+
+            <!-- Enlaces importantes -->
+            <div class="footer_links">
+                <h3>Enlaces Importantes</h3>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#politica">Política de Privacidad</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <!-- Formas de contacto -->
+            <div class="footer_contacto">
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><strong>Teléfono:</strong> <a href="tel:+123456789">+123 456 789</a></li>
+                    <li><strong>Correo:</strong> <a href="mailto:info@lifseguridad.com">info@lifseguridad.com</a></li>
+                    <li><strong>Dirección:</strong> Calle Ejemplo 123, Ciudad, País</li>
+                </ul>
+                <div class="footer_redes">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; 2024 LFI Higiene y Seguridad Empresarial. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

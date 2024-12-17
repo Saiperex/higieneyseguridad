@@ -626,3 +626,10 @@ body
     border-top: 1px solid #555;
     padding-top: 15px;
 }
+
+/*SERVUICIOS*/
+.section_servicios_inicio
+{
+    width: 100%;
+    display: flex;
+}
