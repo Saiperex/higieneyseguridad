@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper2 {
+      width: 100%;
+      overflow: hidden;
+      
+    }
+    .swiper2 .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 400px;
+    }
+
+    .swiper2 .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: fit-content;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper2 mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="1.png" alt=""></div>
+      <div class="swiper-slide"><img src="2.png" alt=""></div>
+      <div class="swiper-slide"><img src="3.png" alt=""></div>
+      <div class="swiper-slide"><img src="4.png" alt=""></div>
+      <div class="swiper-slide"><img src="5.png" alt=""></div>
+      <div class="swiper-slide"><img src="6.png" alt=""></div>
+      <div class="swiper-slide"><img src="7.png" alt=""></div>
+      <div class="swiper-slide"><img src="8.png" alt=""></div>
+      <div class="swiper-slide"><img src="9.png" alt=""></div>
+      <div class="swiper-slide"><img src="10.png" alt=""></div>
+      <div class="swiper-slide"><img src="11.png" alt=""></div>
+      <div class="swiper-slide"><img src="12.png" alt=""></div>
+      <div class="swiper-slide"><img src="13.png" alt=""></div>
+      <div class="swiper-slide"><img src="14.png" alt=""></div>
+      <div class="swiper-slide"><img src="15.png" alt=""></div>
+      <div class="swiper-slide"><img src="16.png" alt=""></div>
+      <div class="swiper-slide"><img src="17.png" alt=""></div>
+      <div class="swiper-slide"><img src="18.png" alt=""></div>
+      <div class="swiper-slide"><img src="19.png" alt=""></div>
+      <div class="swiper-slide"><img src="20.png" alt=""></div>
+      <div class="swiper-slide"><img src="21.png" alt=""></div>
+      <div class="swiper-slide"><img src="22.png" alt=""></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper2", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      loop: true,
+            autoplay:
+            {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+    });
+  </script>
+</body>
+
+</html>
